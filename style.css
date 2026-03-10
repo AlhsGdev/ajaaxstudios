@@ -1,300 +1,310 @@
-html *{
-    margin:0;
-    padding: 0;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-    background-color:transparent;
-    font-size: 18px;
-    font-family: "Raleway", sans-serif;
-    color: white;
-    margin: 0px 40px 0px 40px;
-
-
+background-color:transparent;
+font-size:18px;
+font-family:"Raleway", sans-serif;
+color:white;
+margin:0 40px;
 }
 
+/* NAVBAR */
+
 .nav{
-    background-color: blue;
-    padding: 10px;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 3px solid blue;
+background-color:blue;
+padding:10px;
+min-height:50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:3px solid blue;
 }
 
 .menu{
-    display: flex;
-    flex-direction: rows;
-    justify-content: center;
-    align-items: center;
-    gap:20px;
+display:flex;
+flex-direction:row;
+justify-content:center;
+align-items:center;
+gap:20px;
 }
 
-.nav ul{ 
-    display: flex; 
-    justify-content: space-around; 
-    gap:30px;
-    align-items: center;
+.nav ul{
+display:flex;
+gap:30px;
+align-items:center;
 }
 
 .nav ul li{
-    list-style: none;
+list-style:none;
 }
 
 .nav ul li a{
-    font-weight: bold;
-    text-decoration: none;
-    color:#ffffff;
-    cursor: pointer;
+font-weight:bold;
+text-decoration:none;
+color:#ffffff;
+cursor:pointer;
 }
 
 .nav ul li a:hover{
-    color:blue;
+color:blue;
 }
 
-/*logo*/
+/* LOGO */
+
 .logo{
-    font-size: 40px;
-    font-weight: bold;
-    
+font-size:40px;
+font-weight:bold;
 }
 
 .logo-link{
-    text-decoration: none;
-    font-family: "Raleway", sans-serif;
-    color: white;
-    
+text-decoration:none;
+font-family:"Raleway", sans-serif;
+color:white;
 }
+
+/* HERO */
+
 .box{
-    background-image:url("construction.jpg") ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: 60% ;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    padding:20px;
-    gap:20px;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
-    color:white;
-    font-size: 30px;
-}
-
-.call{
-    font-size: 18px;
-    padding: 5px 10px 5px 10px; 
-    border:2px solid white;
-    border-radius: 12px;
-    background-color: blue;
-    color: white;
-    cursor:pointer;
-    transition:0.2s; 
-}
-
-.call a{
-    text-decoration: none;
-    color:#ffffff;
-    font-weight: bold;
-}
-
-.call:hover:active{
-    background-color: blue;
-    color:black;
-}
-
-.aj{
-    font-size: 40pw;
-    color: blue;
-}
-.aj:hover{
-    color: blue;
-    text-shadow: 0.5px 0.5px  white,
-                -0.5px -0.5px  white,
-                -0.5px 0.5px  white,
-                 0.5px -0.5px  white;
+background-image:url("construction.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+border-bottom-left-radius:20px;
+border-bottom-right-radius:20px;
+height:60vh;
+display:flex;
+flex-direction:column;
+padding:20px;
+gap:20px;
+justify-content:center;
+align-items:center;
+color:white;
+font-size:30px;
+text-align:center;
 }
 
 .wel{
-    text-align: center;
-    font-size: 40px;
+font-size:40px;
+}
+
+/* BUTTONS */
+
+.call{
+font-size:18px;
+padding:5px 10px;
+border:2px solid white;
+border-radius:12px;
+background-color:blue;
+color:white;
+cursor:pointer;
+transition:0.2s;
+text-decoration:none;
+font-weight:bold;
+}
+
+.call:hover{
+opacity:0.8;
 }
 
 .vl{
-    margin-top: 50px;
-    color:rgb(255, 255, 255);
-    border:2px solid white;
-    border-radius: 15px;
-    padding:10px;
-    font-size: 18px;
-    font-weight:bold;
-    background-color: blue;
-}
-
-.vl:hover:active{
-    border:none;
-}
-
-.s1{
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows:400px;
-    align-items: center;
-    background-color:transparent; 
-    margin-top: 20px;
-    padding:30px;
-    gap:50px
-}
-
-.ss{
-    color:black; 
-    display: flex;
-    flex-direction: column;
-    background-color:transparent;
-    align-items: center; 
-    padding:35px;
-    gap:40px;
-}
-
-.serv{
-    display: flex;
-    flex-direction: row; 
-    gap:20px
-
-}
-
-.ss h1{
-    color: blue;
-    font-size: 2rem;
-    text-align: center; 
-
-}
-
-.im1{
-    width:100%;
-    height:100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    gap:10px; 
-    
-
-    
-}
-
-.im1 p{
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 18px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.im1 h1{
-    color:blue;
-}
-
-.im1 .btser{
-    color:rgb(255, 255, 255);
-    border:2px solid white;
-    border-radius: 15px;
-    padding:10px;
-    font-size: 18px;
-    font-weight:bold;
-    background-color: blue;
+margin-top:50px;
+color:white;
+border:2px solid white;
+border-radius:15px;
+padding:10px;
+font-size:18px;
+font-weight:bold;
+background-color:blue;
+cursor:pointer;
 }
 
 .qual{
-    width:120px;
-    margin-top: 10px;
-    color:rgb(255, 255, 255);
-    border:2px solid white;
-    border-radius: 15px;
-    padding:10px;
-    font-size: 18px;
-    font-weight:bold;
-    background-color: blue;
+width:120px;
+margin-top:10px;
+color:white;
+border:2px solid white;
+border-radius:15px;
+padding:10px;
+font-size:18px;
+font-weight:bold;
+background-color:blue;
+cursor:pointer;
 }
 
-.im1 img{
-    width:100%;
-    height: 200px;
-    border:2px solid blue;
-    border-radius: 20px;
+/* SECTIONS */
+
+.s1{
+display:grid;
+grid-template-columns:1fr 1fr;
+align-items:center;
+margin-top:20px;
+padding:30px;
+gap:50px;
 }
 
 .boleft{
-    width: 100%;
-    height: 100%;
-   display:flex;
-   flex-direction: column;
-   justify-content: center;
-   gap:20px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+gap:20px;
 }
 
 .boleft h1{
-    color:blue;
-    font-size: 2rem;
+color:blue;
+font-size:2rem;
 }
-
-.boright{ 
-    width: 100%;
-    height: 100%; *
-}
-
 
 .boleft p{
-    color:rgb(0, 0, 0);
+color:black;
 }
 
-.boleft h1{
-    color:blue;
-    font-size: 2rem;
+/* IMAGES */
+
+img{
+max-width:100%;
+height:auto;
+display:block;
 }
 
 .boright img{
-    border-radius: 20px;
-    width: 100%;
-    height: 100%; 
+border-radius:20px;
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+/* SERVICES */
+
+.ss{
+color:black;
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:35px;
+gap:40px;
+}
+
+.ss h1{
+color:blue;
+font-size:2rem;
+text-align:center;
+}
+
+.serv{
+display:flex;
+flex-direction:row;
+gap:20px;
+}
+
+.im1{
+width:100%;
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:10px;
+}
+
+.im1 img{
+width:100%;
+height:200px;
+border:2px solid blue;
+border-radius:20px;
+object-fit:cover;
+}
+
+.im1 p{
+color:black;
+text-align:center;
+font-size:18px;
+margin:0 10px;
+}
+
+.im1 h1{
+color:blue;
+}
+
+.btser{
+color:white;
+border:2px solid white;
+border-radius:15px;
+padding:10px;
+font-size:18px;
+font-weight:bold;
+background-color:blue;
+cursor:pointer;
+}
+
+/* TABLET RESPONSIVE */
+
+@media (min-width:601px) and (max-width:900px){
+
+.box{
+height:350px;
+}
+
+.wel{
+font-size:30px;
+}
+
+.s1{
+grid-template-columns:1fr;
+}
+
+.serv{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:20px;
+}
 
 }
 
-@media (min-width:601px) and (max-width:900px){
-    .box{
-        height: 350px;
-    
-    }
-    .wel{
-        font-size: 30px;
-    }
+/* MOBILE RESPONSIVE */
 
-    .nav{ 
-        font-size: 15px;
-    }
+@media (max-width:600px){
 
-    .s1{
-    font-size: 17px;
-    color:black; 
-    grid-template-rows:300px; 
+body{
+margin:0 15px;
+}
 
-    }
+.nav{
+flex-direction:column;
+gap:10px;
+height:auto;
+}
 
-    .boleft h1{
-        color:blue;
-    }
+.menu{
+flex-direction:column;
+}
 
-    .serv{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        
-    }
+.nav ul{
+flex-direction:column;
+gap:10px;
+}
 
-    
+.box{
+height:300px;
+font-size:20px;
+}
+
+.wel{
+font-size:24px;
+}
+
+.s1{
+grid-template-columns:1fr;
+gap:20px;
+}
+
+.serv{
+flex-direction:column;
+}
+
+.im1 img{
+height:180px;
+}
 
 }
